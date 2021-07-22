@@ -6,7 +6,11 @@ class Pessoa {
     var nome: String = "Guilherme"
     var cpf: String = "123.456.789-10"
 
-    private set
+    private set // Não deixa alterar fora do escopo da classe
+
+    constructor()
+
+    fun pessoaInfo() = "$nome e $cpf"
 /*
     // Não dá para usar sempre o inner class
     // Usado somente em casos especiais, casos de parses
@@ -21,8 +25,8 @@ class Pessoa {
 fun main(){
     val guilherme = Pessoa()
 
-    println(guilherme.nome)
-    println(guilherme.cpf)
+    println(guilherme.pessoaInfo())
+
 
     //println(guilherme.Endereco().rua)
 }
