@@ -1,7 +1,8 @@
 package one.bank
 
-// open permite a herança
-open class Pessoa (
-    open val nome: String,
-    open val cpf: String,
+// um tipo abstrato só pode ser chamado por classes filhas
+// é uma classe mãe
+abstract class Pessoa (
+    val nome: String,
+    val cpf: String,
 )
