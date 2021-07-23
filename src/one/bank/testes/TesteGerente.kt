@@ -6,6 +6,8 @@ import one.bank.Funcionario
 import java.math.BigDecimal
 
 fun main(){
-    val joao = Gerente(nome = "Gui", cpf = "124232", salario = 10000.0)
+    val joao = Gerente(nome = "João Marques", cpf = "428737232", salario = 10000.0, senha = "senha123")
     imprimeRelatorio(joao)
+
+    TesteAutenticacao().autentica(joao)
 }
